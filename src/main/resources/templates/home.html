@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Placeholder Title</title>
+</head>
+<body>
+<h1 th:text="${title}">Placeholder Title</h1>
+<ul>
+    <li th:each="topic : ${list}" th:text="${topic.title}"></li>
+</ul>
+</body>
+</html>
